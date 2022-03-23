@@ -44,3 +44,13 @@ Can combine static & SSR by just fetching data from the client side
 API endpoints are files under `/pages/api` that implement `export default function handler(req, res)`  
 `req` and `res` are just like the express ones  
 Use these for runtime requests from the browser, _not_ from `getStaticProps` or `getStaticPaths` at build time 
+
+&nbsp;  
+### Deployment
+- Point `https://vercel.com` at your Github repo. It yoinks, builds, and yeets.
+- Has its own built-in CDN
+- Does preview deployments on branches  
+OR
+- `npm run build`
+- `npm run start`
+
